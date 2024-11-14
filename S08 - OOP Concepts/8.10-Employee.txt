@@ -1,0 +1,50 @@
+public class Employee {
+    private String id;
+    private String name;
+    private String dateOfBirth;
+    private String comanyName;
+
+    public Employee(String id, String name, String dateOfBirth, String comanyName) {
+        this.id = id;
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
+        this.comanyName = comanyName;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", dateOfBirth='" + dateOfBirth + '\'' +
+                ", comanyName='" + comanyName + '\'' +
+                '}';
+    }
+}
+
+
+
+
+
+
+
+
+
+public class MainClass {
+    public static void main(String[] args) {
+        for(int i = 1; i <=5; i++){
+            Employee e = new Employee("EN" + i,
+                    switch (i){
+                        case 1 -> "Bob";
+                        case 2 -> "John";
+                        case 3 -> "Imran";
+                        case 4 -> "Kashif";
+                        case 5 -> "Anderson";
+                        default -> "Anonymous";
+                    },
+                    "07-01-1980",
+                    "Nixware");
+            System.out.println(e);
+        }
+    }
+}

@@ -1,0 +1,35 @@
+
+
+class Fraction {
+    private int numerator;
+    private int denominator;
+
+    public Fraction(int numerator, int denominator) {
+        this.numerator = numerator;
+        this.denominator = denominator;
+    }
+
+    @Override
+    public String toString() {
+        return numerator + "/" + denominator;
+    }
+
+    public double doubleValue() {
+        return (double) numerator / denominator;
+    }
+}
+
+ class MainClass{
+    public static void main(String[] args) {
+        // autoboxing - converting int to Integer
+        int numerator = 5;
+        int denominator = 2;
+        Fraction fractionObj = new Fraction(numerator, denominator); // create Fraction object
+
+        System.out.println("The value of fractionObj: " + fractionObj);
+
+        // unboxing - converting Fraction to double
+        double decimalValue = fractionObj.doubleValue(); 
+        System.out.println("The decimal value of fractionObj: " + decimalValue);
+    }
+}

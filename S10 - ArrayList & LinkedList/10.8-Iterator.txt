@@ -1,0 +1,16 @@
+List<String> myList = new ArrayList<>();
+myList.add("apple");
+myList.add("banana");
+myList.add("orange");
+
+Iterator<String> iterator = myList.iterator();
+while (iterator.hasNext()) {
+    String element = iterator.next();
+    System.out.println(element);
+}
+
+output:
+apple
+banana
+orange
+----------------------------------

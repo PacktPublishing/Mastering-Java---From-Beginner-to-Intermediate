@@ -1,0 +1,88 @@
+public class Vahicle {
+    private String make;
+    private String model;
+    private int year;
+
+    public Vahicle(){
+
+    }
+    public Vahicle(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    @Override
+    public String toString() {
+        return "Vahicle{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", year=" + year +
+                '}';
+    }
+
+    public void move(String speed){
+        System.out.println(model + " moves " + speed);
+    }
+    public void service(int month){
+        System.out.println(model + " needs servicing every " + month + " months");
+    }
+}
+
+public class Car extends Vahicle{
+    private int NumberofDoors;
+    private int horsePower;
+    public Car(String make, int year){
+        this(make, year, 4, 9);
+    }
+    public Car(){
+        super("Honda","CIVIC",2023);
+    }
+
+    public Car(String make, int year, int numberofDoors, int horsePower) {
+        super(make, year > 2022 ? make + " Latest Model" : (year < 2020 ? make+ " Previous Model" : make + " Old Model"), year);
+        NumberofDoors = numberofDoors;
+        this.horsePower = horsePower;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "NumberofDoors=" + NumberofDoors +
+                ", horsePower=" + horsePower +
+                "} " + super.toString();
+    }
+
+    public void service(int month){
+
+    }
+
+    @Override
+    public void move(String speed) {
+        super.move(speed);
+        System.out.println("Car Starts comma run on road and work their engine");
+    }
+}
+
+
+public class MainClass {
+    public static void main(String[] args) {
+        Vahicle vahicle = new Vahicle("Toyota", "Camry",2023);
+        doVahicleStuff(vahicle,"Fast",1);
+
+        Car car = new Car();
+        doVahicleStuff(car,"Fast",2);
+
+        Car audi = new Car("Audi", 2019);
+        doVahicleStuff(audi, "Fast", 2);
+        Car tesla = new Car("Tesla", 2023, 4, 1000);
+        doVahicleStuff(tesla, "Super Fast", 1);
+    }
+
+    public static void doVahicleStuff(Vahicle vahicle, String speed, int month){
+        vahicle.service(month);
+        vahicle.move(speed);
+        System.out.println(vahicle);
+        System.out.println("____");
+    }
+}

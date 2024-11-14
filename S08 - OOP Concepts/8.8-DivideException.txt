@@ -1,0 +1,65 @@
+import java.util.Scanner;
+class DivideException {
+    
+    public void doDivide(int a, int b){
+		float result = a / b;
+		System.out.println("Division result of " + a + " / " + b + " = " + result);
+	}
+    
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Please enter first number(numerator): ");
+		int numerator = scanner.nextInt();
+		
+		System.out.print("Please enter second number(denominator): ");
+		int denominator = scanner.nextInt();
+	    
+	    DivideException de = new DivideException();
+	    de.doDivide(numerator,denominator);   	
+	
+	}
+}
+
+
+
+import java.util.Scanner;
+ class DivideException {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Please enter first number(numerator): ");
+		int numerator = scanner.nextInt();
+		
+		System.out.print("Please enter second number(denominator): ");
+		int denominator = scanner.nextInt();
+	    
+	    DivideException de = new DivideException();
+	    de.doDivide(numerator,denominator); 		
+	}
+	
+	public void doDivide(int a, int b){
+		try{
+			float result = a / b;
+			System.out.println("Division result of " + a +" / " + b + " = " + result);
+		}catch(ArithmeticException e){
+			System.out.println("Exception is Handled");
+		}
+		
+		System.out.println("After try catch blocks");
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

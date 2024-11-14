@@ -1,0 +1,73 @@
+public class Person {
+    private String name;
+    private String street;
+    private String city;
+    private String state;
+
+    public Person(String name, String street, String city, String state) {
+        this.name = name;
+        this.street = street;
+        this.city = city;
+        this.state = state;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getState() {
+        return state;
+    }
+}
+
+class Student extends Person{
+    private String rollNumber;
+
+    public Student(String name, String street, String city, String state, String rollNumber) {
+        super(name, street, city, state);
+        this.rollNumber = rollNumber;
+    }
+
+    public String getRollNumber() {
+        return rollNumber;
+    }
+}
+
+class Professor extends Person{
+    private String salary;
+
+    public Professor(String name, String street, String city, String state, String salary) {
+        super(name, street, city, state);
+        this.salary = salary;
+    }
+
+    public String getSalary() {
+        return salary;
+    }
+}
+
+public class MainClass {
+    public static void main(String[] args) {
+        Student student = new Student("John Doe", "5th Ave 32nd floor", "New York",
+                "United States","A201");
+        System.out.println("Student RollNo: " + student.getRollNumber() + "\nName : "
+                + student.getName() + "\nCity: " + student.getCity() + "\nStreet: "
+                + student.getStreet() + "\nState: " + student.getState());
+
+        System.out.println("---------------");
+        Professor professor = new Professor("John Doe", "5th Ave 32nd floor", "New York",
+                "Amercia","10000$");
+        System.out.println("Professor Salary: " + professor.getSalary() + "\nName : "
+                + professor.getName() + "\nCity: " + professor.getCity() + "\nStreet: "
+                + professor.getStreet() + "\nState: " + professor.getState());
+
+    }
+}

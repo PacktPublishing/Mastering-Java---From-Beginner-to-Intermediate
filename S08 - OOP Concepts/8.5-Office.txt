@@ -1,0 +1,43 @@
+ class Office {
+    private String name;
+    
+    public Office(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+}
+
+class MainClass{
+    public static void main(String[] args) {
+        // Create a new office with default properties
+        Office myOffice = new Office("Nixware");
+        Office anotherOffice = myOffice;
+
+        // Print out some information about the office
+        System.out.println("Office name: " + myOffice.getName()); //Nixware
+        System.out.println("Office name: " + anotherOffice.getName()); //Nixware
+        
+        // Change some properties of the office using setters
+        anotherOffice.setName("Nixware Consulting Company");
+        System.out.println("Office name: " + myOffice.getName()); //Nixware Consulting Company
+        System.out.println("Office name: " + anotherOffice.getName()); //Nixware Consulting Company
+        
+        Office newOffice = new Office("Again Nixware");
+        anotherOffice = newOffice;
+        
+        System.out.println("Office name: " + myOffice.getName()); //Nixware Consulting Company
+        System.out.println("Office name: " + newOffice.getName()); //Again Nixware
+        
+        System.out.println("Office name: " + anotherOffice.getName()); //Again Nixware
+        
+        
+    }
+}

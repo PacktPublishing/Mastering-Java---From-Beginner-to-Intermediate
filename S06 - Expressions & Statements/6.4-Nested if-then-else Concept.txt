@@ -1,0 +1,28 @@
+NestedIfElse
+int number = 5;
+if(number > 0){
+if(number % 2 ==0){
+System.out.println("Number is Positive and Even");
+}
+else{
+System.out.println("Number is not Positive but Even");
+}
+}
+else{
+System.out.println("Number is not Positive");
+}
+
+NestedIfElse1
+int purchaseAmount = 120;
+String isMember = "yes";
+if(purchaseAmount > 100){
+if(isMember == "yes"){
+System.out.println("You are eligible for 10% discount");
+}
+else{
+System.out.println("You are eligible for a 5% discount");
+}
+}
+else{
+System.out.println("You are not eligible for a discount");
+}

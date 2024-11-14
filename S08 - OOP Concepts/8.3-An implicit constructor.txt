@@ -1,0 +1,7 @@
+public class Person {
+    private String name;
+    private int age;
+
+    // No constructor declarations provided, so the compiler
+    // generates an implicit default constructor
+}

@@ -1,0 +1,44 @@
+IfElseCondition
+int num = -5;
+if(num > 0){
+System.out.println("Number is Positive");
+}
+else{
+System.out.println("Number is Negative");
+}
+
+IfElseCondition1
+int num = 10;
+if(num >= 0 && num <= 10){
+System.out.println("The Number is within the Range");
+}
+else{
+System.out.println("The Number is not within the Range");
+}
+
+IfElseCondition2
+int letter = 'a';
+if(letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u'){
+System.out.println("The Letter is a Vowel");
+}
+else{
+System.out.println("The Letter is a Consonant");
+}
+
+LadderIfElse
+int score = 65;
+if(score >= 90){
+System.out.println("Grade A");
+}
+else if(score >= 80){
+System.out.println("Grade B");
+}
+else if(score >= 70){
+System.out.println("Grade C");
+}
+else if(score >= 60){
+System.out.println("Grade D");
+}
+else{
+System.out.println("Grade F");
+}

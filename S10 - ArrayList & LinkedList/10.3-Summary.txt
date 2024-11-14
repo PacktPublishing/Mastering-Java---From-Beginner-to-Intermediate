@@ -1,0 +1,24 @@
+--------------------------------------------
+String[] myArray = new String[5];
+ArrayList myArrayList = new ArrayList<>();
+---------------------------------------------
+String[] myArray = new String[] {"Nixware", "Consulting", "Company"};
+String[] myArray = {"Nixware", "Consulting", "Company"}; 
+ArrayList myArrayList = new new ArrayList(List.of("Nixware", "Consulting", "Company"));
+----------------------------------------------------------
+String[][] twoDArray = { {"Nixware", "Consulting", "Company"}, {"New York", "City"} };
+ArrayList<ArrayList<String>> multiDiaList = new ArrayList<>();
+System.out.println(multiDiaList);
+---------------------------------
+int binarySearch (array, element)
+boolean contains(element)
+boolean containsAll(list of elements)
+int indexOf(element)
+int lastIndexOf(element)
+--------------------------
+String[] myArray = {"Nixware", "Consulting", "Company"};
+Arrays.sort(myArray);
+---------------------------
+ArrayList arrayList = new ArrayList(List.of("Nixware", "Consulting", "Company"));
+arrayList.sort(Comparator.naturalOrder()); 
+arrayList.sort(Comparator.reverseOrder());

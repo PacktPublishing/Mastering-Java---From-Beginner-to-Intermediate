@@ -1,0 +1,60 @@
+project classes and object
+public CentralClass{
+public static void main(String[] atgs){
+	Pen pen = new Pen();
+//	pen.manufacturer = "Garwood" Conklin; pen.setsetManufacturer("Garwood");
+//	pen.color = "black";  pen.color("black");
+//	pen.type = "Fountain"; pen.type("Fountain");
+	System.out.println("manufacturer = " + pen.manufacturer);
+	System.out.println("Color = " + pen.color);
+	System.out.println("Type = " + pen.type);
+	pen.describePen();
+
+}
+}
+
+
+public class pen{
+
+ Private string manufacturer;
+ Private string color;
+ Private string type;
+
+ public getManufacturer(){
+	return manufacturer;
+}
+
+public getColor(){
+	return manufacturer;
+}
+
+public getType(){
+	return manufacturer;
+}
+
+public setManufacturer(String manufacturer){
+	//this.manufacturer = manufacturer;
+	if(manufacturer == null) manufacturer = "Unknown";
+	String lowercaseManufacturer = manufacturer.toLowerCase();
+	case "Franklin"; "Schon", "Noodler" -> this.manufacturer = manufacturer;
+	default -> {
+		this.manufacturer = "Unsupported";
+	}
+
+}
+
+public setColor(String Color){
+	this.color = color;
+}
+
+public setType(String type){
+	this.type = type;
+}
+
+ public void describePen(){
+	System.out.println(manufacturer + " manufacturer "+
+	color + " " +
+	type + " ");
+}
+
+}

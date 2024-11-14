@@ -1,0 +1,33 @@
+public class SumOddNumber {
+
+    public static boolean CheckOdd(int number) {
+        if (number <= 0) {
+            return false;
+        }
+        return (number % 2 == 1);
+    }
+
+    public static int sumOdd(int startNumner, int endNumner) {
+        if (startNumner <= 0 || endNumner <= 0 || endNumner < startNumner) {
+            return -1;
+        }
+        int sum = 0;
+        for (int i = startNumner; i <= endNumner; i++) {
+            if (CheckOdd(i)) {
+                sum += i;
+            }
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        int startNumner = 1;
+        int endNumner = 100;
+        int sum = sumOdd(startNumner, endNumner);
+        if (sum == -1) {
+            System.out.println("Invalid input");
+        } else {
+            System.out.println("The sum of odd numbers between " + startNumner + " and " + endNumner + " is " + sum);
+        }
+    }
+}

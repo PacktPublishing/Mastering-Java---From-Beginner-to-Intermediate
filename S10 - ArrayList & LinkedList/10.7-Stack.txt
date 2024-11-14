@@ -1,0 +1,38 @@
+import java.util.LinkedList;
+
+class Stack {
+    private LinkedList<Integer> list;
+
+    public Stack() {
+        list = new LinkedList<Integer>();
+    }
+
+    public void push(int value) {
+        list.addLast(value);
+    }
+
+    public int pop() {
+        if (list.isEmpty()) {
+            System.out.println("Stack is empty");
+            return -1;
+        } else {
+            return list.removeLast();
+        }
+    }
+}
+class MainClass{
+    public static void main(String[] args){
+        Stack stack = new Stack();
+
+        // push values onto the stack using a loop
+        for (int i = 1; i <= 3; i++) {
+            stack.push(i * 10);
+        }
+
+        // pop values from the stack using a loop
+        for (int i = 1; i <= 4; i++) {
+            System.out.println(stack.pop());
+        }
+
+    }
+}

@@ -1,0 +1,14 @@
+ExpressionsAndStatements
+ExperState
+public static void main(String[] args){
+double double = 2.0;
+double1
+double miles = (70 * 0.621371);
+}
+
+ExperState1
+int x = 5;
+if(x > 3){
+ x = x + 10;
+
+}

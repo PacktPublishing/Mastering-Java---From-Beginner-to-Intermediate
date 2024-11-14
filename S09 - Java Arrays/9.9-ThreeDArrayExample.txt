@@ -1,0 +1,25 @@
+public class ThreeDArrayExample {
+    public static void main(String[] args) {
+        int[][][] threeDArray = new int[3][3][3];
+
+        // Assigning values to the 3D array
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                for (int k = 0; k < 3; k++) {
+                    threeDArray[i][j][k] = i + j + k;
+                }
+            }
+        }
+
+        // Printing the values of the 3D array
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                for (int k = 0; k < 3; k++) {
+                    System.out.print(threeDArray[i][j][k] + " ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+    }
+}

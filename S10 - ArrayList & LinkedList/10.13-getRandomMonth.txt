@@ -1,0 +1,24 @@
+package nixware.consulting;
+
+import java.util.Random;
+public class MainClass {
+    public static void main(String[] args) {
+        Months monthOfYear = Months.JAN;
+        System.out.println(monthOfYear);
+        for (int i = 0; i < 10; i++ ) {
+            monthOfYear = getRandomMonth();
+            System.out.printf("Name is %s, Ordinal Value = %d%n",
+                    monthOfYear.name(), monthOfYear.ordinal());
+
+            if (monthOfYear == monthOfYear.JUN) {
+                System.out.println("Found the month of June!!!");
+            }
+        }
+    }
+    public static Months getRandomMonth() {
+
+        int randomInteger = new Random().nextInt(12);
+        var allMonths = Months.values();
+        return allMonths[randomInteger];
+    }
+}

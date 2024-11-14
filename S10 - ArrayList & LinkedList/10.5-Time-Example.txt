@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class Example {
+    public static void main(String[] args) {
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        LinkedList<Integer> linkedList = new LinkedList<>();
+
+        // Add elements to the array list and linked list
+        for (int i = 0; i < 1000000; i++) {
+            arrayList.add(i);
+            linkedList.add(i);
+        }
+
+        // Remove first element from both lists
+        long startTime = System.nanoTime();
+        arrayList.remove(0);
+        long endTime = System.nanoTime();
+        long durationAL = endTime - startTime;
+
+        startTime = System.nanoTime();
+        linkedList.remove(0);
+        endTime = System.nanoTime();
+        long durationLL = endTime - startTime;
+
+        System.out.println("Time taken by ArrayList: " + durationAL + " nanoseconds");
+        System.out.println("Time taken by LinkedList: " + durationLL + " nanoseconds");
+    }
+}

@@ -1,0 +1,17 @@
+OrOperator
+double examScore = 85;
+if(examScore >= 60 || examScore  <= 100){
+System.out.println("The student has passed the Exam");
+}
+
+OrOperator1
+double num = 6;
+if(num % 2 == 0 || num % 3 == 0){
+System.out.println("The Number is even or divisible by 3");
+}
+
+NotOperator
+int num = 7;
+if(!(num % 2 == 0)){
+System.out.println("The Number is odd");
+}

@@ -1,0 +1,29 @@
+enum EnumName {
+    CONSTANT1,
+    CONSTANT2,
+    ...
+    CONSTANTN
+}
+------------------------
+enum Animal {
+    DOG("Fido", 4),
+    CAT("Fluffy", 4),
+    BIRD("Tweety", 2);
+
+    private String name;
+    private int numLegs;
+
+    Animal(String name, int numLegs) {
+        this.name = name;
+        this.numLegs = numLegs;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getNumLegs() {
+        return numLegs;
+    }
+}
+

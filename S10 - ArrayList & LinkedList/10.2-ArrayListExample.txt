@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        
+        ArrayList<Integer> intList = new ArrayList<Integer>();
+        intList.add(10);
+        intList.add(20);
+        intList.add(30);
+        System.out.println("Integers: " + intList);
+
+        ArrayList<String> fruits = new ArrayList<String>();
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Orange");
+        fruits.add("Mango");
+
+
+        System.out.println("ArrayList before removing an element:");
+        System.out.println(fruits);
+
+        fruits.remove("Orange");
+
+        System.out.println("ArrayList after removing an element:");
+        System.out.println(fruits);
+
+        String firstFruit = fruits.get(0);
+        System.out.println("First fruit in the ArrayList: " + firstFruit);
+
+
+        fruits.set(1, "Kiwi");
+
+        System.out.println("ArrayList after updating an element:");
+        System.out.println(fruits);
+    }
+}
+
+        
+        
+        
+    }
+}

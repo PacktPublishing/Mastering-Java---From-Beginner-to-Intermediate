@@ -1,0 +1,21 @@
+value type
+------
+int[] values = new int[] {1, 2, 3, 4};
+int[] copy = Arrays.copyOf(values, values.length);
+values[0] = 5;
+System.out.println(Arrays.toString(values)); // output: [5, 2, 3, 4]
+System.out.println(Arrays.toString(copy)); // output: [1, 2, 3, 4]
+
+int[] values = {1,2,3};
+boolean values1 = {true, false};
+
+
+
+----------
+reference type
+-------------
+String[] names = new String[] {"Alice", "Bob", "Charlie"};
+String[] copy = names;
+names[0] = "Dave";
+System.out.println(Arrays.toString(names)); // output: ["Dave", "Bob", "Charlie"]
+System.out.println(Arrays.toString(copy)); // output: ["Dave", "Bob", "Charlie"]

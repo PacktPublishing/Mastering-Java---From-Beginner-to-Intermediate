@@ -1,0 +1,9 @@
+try {
+    // code that may throw an exception
+} catch (FileNotFoundException e) {
+    // code to handle file not found exception
+} catch (IOException e) {
+    // code to handle input/output exception
+} catch (Exception e) {
+    // code to handle all other exceptions
+}

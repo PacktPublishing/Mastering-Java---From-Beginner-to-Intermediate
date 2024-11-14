@@ -1,0 +1,17 @@
+class MyCompany{
+
+public void CompanyName(String name, String location){
+	System.out.println("Company Name is: " + name + " & Company Location is: " + location);
+}
+
+}
+
+class MainClass{
+
+public static void main(String[] args){
+
+	MyCompany Company = new MyCompany(); 
+	Company.CompanyName("Nixware","New York");
+}
+	
+}

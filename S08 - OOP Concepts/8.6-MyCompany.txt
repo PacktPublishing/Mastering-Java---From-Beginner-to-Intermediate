@@ -1,0 +1,20 @@
+class MyCompany {
+
+public static void CompanyName(String name, String location){
+	System.out.println("Comany Name is: " + name + " Comapny Location is: " + location);
+}
+
+}
+
+class MainClass{
+
+public static void main(String[] args){
+	MyCompany.CompanyName("Nixware","New York");
+	printHello();
+}
+
+public static void printHello(){
+	System.out.println("Hello Nixware Students");
+}	
+
+}

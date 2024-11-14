@@ -1,0 +1,9 @@
+public class ParseValue{
+    public static void main(String[] args) {
+        FromConsole();
+    }
+    public static void FromConsole() {
+        String name = System.console().readLine("What is your Name? ");
+        System.out.println("Your Name is: " + name);
+    }
+}

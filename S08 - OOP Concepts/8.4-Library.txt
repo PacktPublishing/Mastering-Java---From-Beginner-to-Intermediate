@@ -1,0 +1,64 @@
+class Library {
+    private String name;
+    private int numBooks;
+    private String address;
+
+    // Constructor
+    public Library(String name, int numBooks, String address) {
+        this.name = name;
+        this.numBooks = numBooks;
+        this.address = address;
+    }
+
+    // Getter for name
+    public String getName() {
+        return name;
+    }
+    
+     // Getter for numBooks
+    public int getNumBooks() {
+        return numBooks;
+    }
+    
+    // Getter for address
+    public String getAddress() {
+        return address;
+    }
+
+    // Setter for name
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Setter for numBooks
+    public void setNumBooks(int numBooks) {
+        this.numBooks = numBooks;
+    }
+
+    // Setter for address
+    public void setAddress(String address) {
+        this.address = address;
+    }
+}
+
+
+class MainClass {
+    public static void main(String[] args) {
+        Library myLibrary = new Library("Central Library", 5000, "123 Main Street");
+
+        // Access instance variables using getter methods
+        System.out.println(myLibrary.getName());  
+        System.out.println(myLibrary.getNumBooks()); 
+        System.out.println(myLibrary.getAddress());  
+
+        // Modify instance variables using setter methods
+        myLibrary.setName("Downtown Library");
+        myLibrary.setNumBooks(10000);
+        myLibrary.setAddress("456 Elm Street");
+
+        // Access modified instance variables using getter methods
+        System.out.println(myLibrary.getName()); 
+        System.out.println(myLibrary.getNumBooks()); 
+        System.out.println(myLibrary.getAddress()); 
+    }
+}

@@ -1,0 +1,23 @@
+project classes and object
+public class CentralClass{
+public static void main(String[] args){
+   Pen pen = new Pen();
+   
+   pen.describePen();
+}
+
+}
+
+public class Pen{
+
+ Private string manufacturer = "Edison";
+ Private string color = "Blue";
+ Private string type = "Jell";
+
+ public void describePen(){
+	System.out.println(manufacturer + " manufacturer "+
+	color + " " +
+	type + " ");
+}
+
+}

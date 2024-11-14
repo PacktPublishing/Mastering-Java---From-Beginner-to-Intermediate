@@ -1,0 +1,8 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        int currentYear = 2023;
+        String BirthYear = "1992";
+        int myBirthYear = Integer.parseInt(BirthYear);
+        System.out.println("Total Age: " + (currentYear - myBirthYear));
+    }
+}

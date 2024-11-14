@@ -1,0 +1,16 @@
+MyMethodClass
+
+public static void printString(){
+ System.out.println("Hello World");
+}
+
+printString();
+
+paraMethodClass
+
+public static void Modifiers(int number, String name){
+ System.out.println("First Parameter Value is: " + number);
+ System.out.println("Second Parameter Value is: " + name);
+}
+
+Modifiers(1,"Nixware");

@@ -1,0 +1,41 @@
+project classes and object
+public CenteralClass{
+public static void main(String[] atgs){
+	Pen pen = new Pen();
+	pen.manufacturer = "Garwood";
+	pen.color = "black";
+	pen.type = "Fountain";
+	System.out.println("manufacturer = " + pen.manufacturer);
+	System.out.println("Color = " + pen.color);
+	System.out.println("Type = " + pen.type);
+	pen.describePen();
+
+}
+}
+
+
+public class pen{
+
+ Private string manufacturer;
+ Private string color;
+ Private string type;
+
+ public getManufacturer(){
+	return manufacturer;
+}
+
+public getColor(){
+	return manufacturer;
+}
+
+public getType(){
+	return manufacturer;
+}
+
+ public void describePen(){
+	System.out.println(manufacturer + " manufacturer "+
+	color + " " +
+	type + " ");
+}
+
+}

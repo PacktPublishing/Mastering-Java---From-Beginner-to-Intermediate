@@ -1,0 +1,85 @@
+public class Fruit {
+    private String name;
+    public Fruit(String name) {
+        this.name = name;
+    }
+    public void isRipe(String check){
+        String instanceType = this.getClass().getSimpleName();
+        System.out.println(name + " is a " + instanceType + " and " + check);
+    }
+    public static Fruit getFruit(String type, String name){
+        return switch (type.toUpperCase().charAt(0)){
+            case 'A' -> new Apple(name);
+            case 'B' -> new Banana(name);
+            default -> new Fruit(name);
+        };
+    }
+}
+class Apple extends Fruit{
+    public Apple(String name) {
+        super(name);
+    }
+
+    @Override
+    public void isRipe(String check) {
+        super.isRipe(check);
+        System.out.println(check + " Apple may lower your risk for cancer, diabetes, and heart disease.");
+    }
+    public void EatApple(){
+        System.out.println("Eating this delicious Apple");
+    }
+}
+
+class Banana extends Fruit{
+    public Banana(String name) {
+        super(name);
+    }
+
+    @Override
+    public void isRipe(String check) {
+        super.isRipe(check);
+        System.out.println(check + " Banana May support digestive health ");
+    }
+    public void EatBanana(){
+        System.out.println("Eating this delicious Banana");
+    }
+}
+
+public class MainClass {
+    public static void main(String[] args) {
+        Fruit fruit = Fruit.getFruit("Apple","Honey Crisp");
+        fruit.isRipe("Ripped");
+
+//        Scanner sc = new Scanner(System.in);
+//        while(true){
+//            System.out.print("Enter Type (A for Apple, B For Banana, or Q to quit): ");
+//            String type = sc.nextLine();
+//            if("Qq".contains(type)){
+//                break;
+//            }
+//            System.out.print("Enter the fruit Title: ");
+//            String name = sc.nextLine();
+//            Fruit fruit = Fruit.getFruit(type, name);
+//            fruit.isRipe("Ripped");
+//        }
+    }
+}
+
+public class MainClassTwo {
+    public static void main(String[] args) {
+        Fruit fruit = Fruit.getFruit("B", "Cavendish Banana");
+        fruit.isRipe("Ripped");
+//        Banana CavendishBanana = (Banana) Fruit.getFruit("A", "Cavendish Banana");
+//        CavendishBanana.isRipe("Ripped");
+
+        Object apple = Fruit.getFruit("A", "Granny Smith");
+        Apple appleFruit = (Apple) apple;
+        appleFruit.EatApple();
+
+        var honeycrisp = Fruit.getFruit("A","Honeycrisp");
+        honeycrisp.isRipe("Ripped");
+
+        var plantain = new Banana("plantain");
+        plantain.isRipe("Ripped");
+    }
+}

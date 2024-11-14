@@ -1,0 +1,91 @@
+public class MarksCalculation {
+    public int mathMarks;
+    public int scienceMarks;
+    public int percentage;
+    public String grade;
+    public void calculatePercentage() {
+        percentage = ((mathMarks + scienceMarks) / 200.0f) * 100.0f;
+    }
+    public void calculateGrade() {
+        if (percentage >= 90 && percentage <= 100) {
+            grade = "A";
+        } else if (percentage >= 80 && percentage <= 89) {
+            grade = "B";
+        } else if (percentage >= 70 && percentage <= 79) {
+            grade = "C";
+        } else if (percentage >= 60 && percentage <= 69) {
+            grade = "D";
+        } else {
+            grade = "F";
+        }
+    }
+}
+public class MainClass {
+    public static void main(String[] args) {
+        MarksCalculation calculation = new MarksCalculation();
+
+        calculation.mathMarks = 80;
+        calculation.scienceMarks = 90;
+        calculation.calculatePercentage();
+        calculation.calculateGrade();
+
+        calculation.mathMarks = 150;
+        calculation.scienceMarks = 190;
+
+        System.out.println("Percentage: " + calculation.percentage);
+        System.out.println("Grade: " + calculation.grade);
+    }
+}
+
+--------------
+Ecapsulate
+--------------
+public class EncapsulateCalculation {
+    private int mathMarks;
+    private int scienceMarks;
+    private float percentage;
+    private String grade;
+
+    public EncapsulateCalculation(int mathMarks, int scienceMarks) {
+        if(mathMarks < 0){
+            this.mathMarks = 0;
+        } else if (scienceMarks < 0) {
+            this.scienceMarks = 0;
+        } else if (mathMarks > 100) {
+            this.mathMarks = 100;
+        } else if (scienceMarks > 100) {
+            this.scienceMarks = 100;
+        } else{
+            this.scienceMarks = scienceMarks;
+            this.mathMarks = mathMarks;
+        }
+    }
+
+    private float calculatePercentage() {
+         return ((this.mathMarks + this.scienceMarks) / 200.0f) * 100.0f;
+    }
+
+    public String calculateGrade() {
+        this.percentage = calculatePercentage();
+        if (this.percentage >= 90 && this.percentage <= 100) {
+            this.grade = "A";
+        } else if (this.percentage >= 80 && this.percentage <= 89) {
+            this.grade = "B";
+        } else if (this.percentage >= 70 && this.percentage <= 79) {
+            this.grade = "C";
+        } else if (this.percentage >= 60 && this.percentage <= 69) {
+            this.grade = "D";
+        } else {
+            this.grade = "F";
+        }
+        return "Percentage: " + this.percentage + "\nGrade: " + this.grade;
+    }
+}
+
+public class MainClass {
+    public static void main(String[] args) {
+        EncapsulateCalculation ec = new EncapsulateCalculation(70,80);
+        String result = ec.calculateGrade();
+        System.out.println(result);
+    }
+}

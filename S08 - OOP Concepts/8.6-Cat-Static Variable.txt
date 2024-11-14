@@ -1,0 +1,21 @@
+class Cat{
+private static String name;
+
+public Cat(String name){
+	Cat.name = name;
+}
+
+public void printName(){
+ System.out.println("Name = " + name);
+}
+}
+
+class MainClass{
+public static void main(String[] args){
+	Cat MaineCoon = new Cat("Maine Coon");
+	Cat Ragdoll = new Cat("Ragdoll");
+	MaineCoon.printName(); // Prints Ragdoll
+	Ragdoll.printName(); // Prints Ragdoll
+}
+
+}

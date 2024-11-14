@@ -1,0 +1,16 @@
+
+
+class EnhanceSwitch{
+  public static void main(String[] args) {
+
+    String levelString;
+        int level = 3;
+        levelString = switch (level) {
+            case 1 -> "Beginner";
+            case 2 -> "Intermediate";
+            case 3 -> "Expert";
+            default -> "Failed to Learn";
+        };
+        System.out.println("Your Level is: " + levelString); 
+  }
+}

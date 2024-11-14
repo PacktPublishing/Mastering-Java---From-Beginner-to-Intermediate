@@ -1,0 +1,13 @@
+CompOperator
+int x = 5, y = 3, z = 4;
+if(x > y && x > z){
+System.out.println("x is the largest number");
+}
+
+CompOperator1
+int score = 85;
+String grade;
+if(score >= 80 && score <= 95){
+grade = "A";
+System.out.println(grade);
+}

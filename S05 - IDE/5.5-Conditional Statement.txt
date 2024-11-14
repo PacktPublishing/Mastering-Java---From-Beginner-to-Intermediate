@@ -1,0 +1,16 @@
+boolean flag = true;
+if(flag){
+System.out.println("Flag is True");
+}
+
+Condition1
+boolean user = true;
+if(user == true){
+System.out.println("It's True");
+}
+
+Condition2
+int x = 5;
+if(x > 0){
+System.out.println("X is Positive");
+}

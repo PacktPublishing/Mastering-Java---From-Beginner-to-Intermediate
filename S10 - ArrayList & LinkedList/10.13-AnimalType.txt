@@ -1,0 +1,18 @@
+package nixware.consulting;
+
+public class Animal {
+    public enum AnimalType{
+        DOG, CAT, BIRD, FISH
+    }
+    public static void main(String[] args) {
+        AnimalType animal = AnimalType.DOG;
+
+        switch (animal) {
+            case DOG -> System.out.println("The dog barks.");
+            case CAT -> System.out.println("The cat meows.");
+            case BIRD -> System.out.println("The bird sings.");
+            case FISH -> System.out.println("The fish swims.");
+            default -> System.out.println("Unknown animal type.");
+        }
+    }
+}

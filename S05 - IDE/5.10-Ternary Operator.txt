@@ -1,0 +1,17 @@
+TernaryOperator
+int age = 20;
+String status;
+status = (age < 18) ?  "Under Age" : "Senior";
+System.out.println(status);
+
+TernaryOperator1
+int marks = 50;
+String result;
+result = (marks > 40) ?  "Pass" : "Fail";
+System.out.println(result);
+
+TernaryOperator2
+int number = 24;
+String result;
+result = (number > 0) ?  "Positive Number" : "Negative Number";
+System.out.println(result);

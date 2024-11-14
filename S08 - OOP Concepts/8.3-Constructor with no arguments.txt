@@ -1,0 +1,10 @@
+public class Person {
+    private String name;
+    private int age;
+
+    // Default constructor with no arguments
+    public Person() {
+        name = null;
+        age = 0;
+    }
+}

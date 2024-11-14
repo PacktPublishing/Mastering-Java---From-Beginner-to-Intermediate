@@ -1,0 +1,35 @@
+import java.util.LinkedList;
+
+class Queue {
+    private LinkedList<Integer> list;
+
+    public Queue() {
+        list = new LinkedList<Integer>();
+    }
+
+    public void enqueue(int value) {
+        list.addLast(value);
+    }
+
+    public int dequeue() {
+        if (list.isEmpty()) {
+            System.out.println("Queue is empty");
+            return -1;
+        } else {
+            return list.removeFirst();
+        }
+    }
+}
+class MainClass{
+    public static void main(String[] args){
+        Queue queue = new Queue();
+        queue.enqueue(1);
+        queue.enqueue(2);
+        queue.enqueue(3);
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+
+    }
+}

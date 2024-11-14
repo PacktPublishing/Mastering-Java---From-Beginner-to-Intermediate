@@ -1,0 +1,34 @@
+Example 1
+---------
+Array Variable Declaration 
+int[] RollNoList;
+String[] NameList;
+String SubjectList[];
+
+---------
+example 2
+---------
+Array Creation
+Object Creation
+int[] myArray = new int[5]; 
+StringBuilder builder = new StringBuilder();
+
+--------
+example 3
+----------
+Invalid Array Creation - Compile Error because of ()
+int[] myArray = new int[5]();
+
+----------
+Single
+---------
+int[] RollNoList;
+String[] NameList;
+String SubjectList[];
+
+-----------
+
+----------
+dataType[][] arrayName;
+int[][] myArray;
+arrayName[rowIndex][columnIndex];

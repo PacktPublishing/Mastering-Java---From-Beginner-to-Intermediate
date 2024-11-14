@@ -1,0 +1,43 @@
+public class MainClass {
+
+    public static void main(String[] args) {
+
+        int[] numberArray = new int[4];
+        numberArray[2] = 30;
+	numberArray[0] = 4.5;
+	numberArray[1] = 30;
+
+        double[] decimalArray = new double[4];
+        decimalArray[1] = 11.5;
+        System.out.println(decimalArray[1]);
+
+
+	int[] SixNumbers = {1, 2, 3, 4, 5, 6); 
+	System.out.println("First Number = + SixNumbers[0]);
+	int arrayLength SixNumbers.length;
+	System.out.println("Length of Array = "+ arrayLength);
+	System.out.println("last = " + firstTen[arrayLength - 1]);
+	int anotherArray[];
+	anotherArray = new int[] {1,2,3,4};
+	for (int i = 0; i < anotherArray.length; i++){
+		System.out.print(anotherArray[i] + " ");
+	}
+	System.out.print("----------");
+	for (int element : anotherArray){
+		System.out.print(element + " ");
+	}
+
+	Object objectsVariable = newArray;
+if (objectsVariable instanceof int[]) {
+System.out.println("objects Variable is int array");
+}
+
+Object[] objectArray = new Object[5];
+objectsArray[0] = newArray;
+objectsArray[1] = "Nixware";
+objectsArray[2] = new StringBuilder("World");
+
+
+        }
+    }
+}

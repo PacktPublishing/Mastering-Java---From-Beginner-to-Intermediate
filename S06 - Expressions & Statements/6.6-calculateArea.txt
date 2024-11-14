@@ -1,0 +1,31 @@
+MethodExample
+public static void AddNumbers(int num1, int num2){
+int sum = num1 + num2;
+System.out.println("Sum is: " + sum);
+}
+
+AddNumbers(23,30);
+
+MethodExample1
+public static void calculateArea(double radius, double pi){
+double result = radius * pi;
+System.out.println("Area of circle is: " + result);
+}
+
+calculateArea(10,3.14);
+
+double
+
+return result;
+
+double area = calculateArea(10,3.14);
+System.out.println("Area of circle is: " + area);
+
+
+MethodExample3
+public static int Add(int a, int b){
+return a + b;
+}
+
+int sum = Add(100,200);
+System.out.println(sum);

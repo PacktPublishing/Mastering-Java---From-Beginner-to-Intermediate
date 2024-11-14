@@ -1,0 +1,14 @@
+String RightArrow = "Welcome to our:"+
+"\U+279E Company"+
+"\U+279E Nixware";
+System.out.println(RightArrow);
+
+String text block = "Welcome to our:"+
+"\U+279E Company"+
+"\U+279E Nixware";
+
+int number = 100;
+System.out.printf("Your Number is: %d",number);
+
+int sum = number + 40;
+System.out.printf("Number = %d, Sum = %d", number, sum);

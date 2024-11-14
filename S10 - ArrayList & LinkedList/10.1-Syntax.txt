@@ -1,0 +1,11 @@
+Syntax
+-----------
+ArrayList<DataType> listName = new ArrayList<DataType>();
+
+ArrayList<Integer> myArrayList = new ArrayList<Integer>();
+
+ArrayList<Integer> myArrayList = new ArrayList<Integer>(10);
+
+myArrayList.add(1);
+myArrayList.add(2);
+myArrayList.add(3);
